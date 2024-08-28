@@ -58,34 +58,41 @@ dipタイプとtail currentタイプの違いが何によるのかの考察中
 dipタイプについてある場合とない場合についての比較を行った   
 dipありとして199，52，なしとして200，54を利用
 * 磁場最大値
-  * 199 : 72.3
-  * 200 : 107
-  * 52 : 90.4
-  * 54 : 86.2
+  * 199 (dipあり) : 72.3
+  * 200 (dipなし) : 107
+  * 52 (dipあり) : 90.4
+  * 54 (dipなし) : 86.2
 * 磁場最小値
-  * 199 : 5.49
-  * 200 : 44.2
-  * 52 : 15.9
-  * 54 : 24.9
+  * 199 (dipあり) : 5.49
+  * 200 (dipなし) : 44.2
+  * 52 (dipあり) : 15.9
+  * 54 (dipなし) : 24.9
   
 各タイプの図は以下の通り
-![alt text](figure/Bz_52.png)
-![alt text](figure/Bz_54.png)
-![alt text](figure/Bz_199.png)
-![alt text](figure/Bz_200.png)
+<figure>
+<img src='figure/Bz_199.png' width='40%'>
+<img src='figure/Bz_200.png' width='40%'>
+</figure>
+<figure>
+<img src='figure/Bz_52.png' width='40%'>
+<img src='figure/Bz_54.png' width='40%'>
+</figure>
 
 tail currentタイプについてある場合とない場合についての比較を行った
 dipありとして2048，なしとして2047を利用
 * 磁場最大値
-  * 2048 : 20.4
-  * 2047 : 28.5
+  * 2048 (tcなし) : 20.4
+  * 2047 (tcなし) : 28.5
 * 磁場最小値
-  * 2048 : 3.90
-  * 2047 : 23.7
+  * 2048 (tcなし) : 3.90
+  * 2047 (tcなし) : 23.7
 
 それぞれ以下の通り
-![alt text](figure/Bz_2048.png)
-![alt text](figure/Bz_2047.png)
+
+<figure>
+<img src='figure/Bz_2048.png' width='40%'>
+<img src='figure/Bz_2047.png' width='40%'>
+</figure>
 
 →磁場の最大値・最小値の比較は（特に窪み無しが）領域に依存するので意味がない   
 時間変動で考える
