@@ -6,6 +6,7 @@
 - [2024/08/27](#20240827)
 - [2024/08/28](#20240828)
 - [2024/09/09](#20240909)
+- [2024/09/20](#20240920)
 
 ## 関連ファイル
 * __MDUS__  
@@ -153,3 +154,65 @@ Scanデータを利用できるようにMDUSを準備
 diamagnetic currentを計算できるように準備，過去のモジュールと計算結果が一致するか（先行研究も）比較する
 ### 作業ファイル
 複数ファイルにわたるため割愛
+
+## 2024/09/20
+### 研究内容
+fluxとdepressionの関係の考察を行った
+
+作業仮説として
+* 低エネルギーのFluxはNeutral Sheetに原因がある   
+→低エネルギーのFluxはdepressionの有無・タイプに依らずに常に同じようにあるはず
+* 高エネルギーのFluxはdip（Ring Current？）タイプに関係がある   
+→dipタイプでみられるはず
+* 低エネルギーfluxは距離に依存せずに広く分布しているはず
+* 高エネルギーfluxは近距離にのみあるはず
+* 太陽風とfluxの関係も見られたらうれしい
+
+#### 低エネルギーについて
+1keVの場合，以下のようになった
+<figure>
+<img src='./figure/flux/1.011_flux_rss.png' width='80%'>
+</figure>
+各タイプでほとんど違いはないといえそう？→neutral sheetの影響（？）は全領域でそれなりに効いていそう？
+
+また，dipタイプとnsタイプの分布の違いは以下の様
+<figure>
+<img src='./figure/flux/dip_1.011_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/ns_1.011_flux_rss_x.png' width='40%'>
+</figure>
+Neutral Sheetタイプのほうがfluxが強い？→neutral sheetの影響を強く受けている？
+
+#### 高エネルギーについて
+10keVの場合以下の様になった
+<figure>
+<img src='./figure/flux/10.1738_flux_rss.png' width='80%'>
+</figure>
+dipタイプのほうがfluxが強い→内側では強いfluxを持つ構造が存在している証左？
+
+また，dipタイプとnsタイプの分布の違いは以下の様
+<figure>
+<img src='./figure/flux/dip_10.1738_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/ns_10.1738_flux_rss_x.png' width='40%'>
+</figure>
+はっきりとはわからないが，dipタイプのほうが強いfluxが多い？（あまり確信をもっては言えなさそう...）
+
+#### まとめ
+* 作業仮説の初めの2つはある程度は言えそう？
+* NSタイプでも高エネルギーでfluxがあるものがある  
+→Ring currentの影響が外側まで来ている？ 
+→電流で分類したときにはBxが主要因だったはずなのに？ 
+→中間領域だったのかも...それともほかの要因での高エネルギー？
+* dipタイプでBzが重要なのに高エネルギーのfluxがないものは何？(orbit 199とorbit 201の違いは？)
+* 太陽風との相関は言えなさそう...   
+→depressionの深さの評価の時と同じく，うまく出来ないのでは？
+
+**参考**
+<figure>
+<img src='./figure/199.png' width='40%'>
+<img src='./figure/201.png' width='40%'>
+</figure>
+
+### 作業内容
+省略
+### 今後の予定
+### 作業ファイル
