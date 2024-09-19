@@ -179,6 +179,7 @@ fluxとdepressionの関係の考察を行った
 <figure>
 <img src='./figure/flux/dip_1.011_flux_rss_x.png' width='40%'>
 <img src='./figure/flux/ns_1.011_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/none_1.011_flux_rss_x.png' width='40%'>
 </figure>
 Neutral Sheetタイプのほうがfluxが強い？→neutral sheetの影響を強く受けている？
 
@@ -193,8 +194,11 @@ dipタイプのほうがfluxが強い→内側では強いfluxを持つ構造が
 <figure>
 <img src='./figure/flux/dip_10.1738_flux_rss_x.png' width='40%'>
 <img src='./figure/flux/ns_10.1738_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/none_10.1738_flux_rss_x.png' width='40%'>
 </figure>
-はっきりとはわからないが，dipタイプのほうが強いfluxが多い？（あまり確信をもっては言えなさそう...）
+
+~~はっきりとはわからないが，dipタイプのほうが強いfluxが多い？（あまり確信をもっては言えなさそう...）~~    
+違いはほとんどないとしか言えなさそう...
 
 #### まとめ
 * 作業仮説の初めの2つはある程度は言えそう？
