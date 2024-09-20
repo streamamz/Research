@@ -183,7 +183,9 @@ fluxとdepressionの関係の考察を行った
 <img src='./figure/flux/ns_1.011_flux_rss_x.png' width='30%'>
 <img src='./figure/flux/none_1.011_flux_rss_x.png' width='30%'>
 </figure>
-Neutral Sheetタイプのほうがfluxが強い？→neutral sheetの影響を強く受けている？
+
+~~Neutral Sheetタイプのほうがfluxが強い？→neutral sheetの影響を強く受けている？~~ 
+
 
 #### 高エネルギーについて
 10keVの場合以下の様になった
@@ -218,8 +220,9 @@ depressionの磁場成分だけでなく，Fluxのエネルギーも使って，
 
 **参考**
 <figure>
-<img src='./figure/199.png' width='40%'>
-<img src='./figure/201.png' width='40%'>
+<img src='./figure/199.png' width='90%'>
+<img src='./200.png' width='90%'>
+<img src='./figure/201.png' width='90%'>
 </figure>
 
 ### 作業内容
