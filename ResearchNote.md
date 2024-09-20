@@ -171,30 +171,34 @@ fluxとdepressionの関係の考察を行った
 #### 低エネルギーについて
 1keVの場合，以下のようになった
 <figure>
-<img src='./figure/flux/1.011_flux_rss.png' width='80%'>
+<img src='./figure/flux/1.011_flux_rss.png' width='30%'>
+<img src='./figure/flux/1.011_flux_hist_dip_ns.png' width='30%'>
+<img src='./figure/flux/1.011_flux_hist.png' width='30%'>
 </figure>
 各タイプでほとんど違いはないといえそう？→neutral sheetの影響（？）は全領域でそれなりに効いていそう？
 
 また，dipタイプとnsタイプの分布の違いは以下の様
 <figure>
-<img src='./figure/flux/dip_1.011_flux_rss_x.png' width='40%'>
-<img src='./figure/flux/ns_1.011_flux_rss_x.png' width='40%'>
-<img src='./figure/flux/none_1.011_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/dip_1.011_flux_rss_x.png' width='30%'>
+<img src='./figure/flux/ns_1.011_flux_rss_x.png' width='30%'>
+<img src='./figure/flux/none_1.011_flux_rss_x.png' width='30%'>
 </figure>
 Neutral Sheetタイプのほうがfluxが強い？→neutral sheetの影響を強く受けている？
 
 #### 高エネルギーについて
 10keVの場合以下の様になった
 <figure>
-<img src='./figure/flux/10.1738_flux_rss.png' width='80%'>
+<img src='./figure/flux/10.1738_flux_rss.png' width='30%'>
+<img src='./figure/flux/10.1738_flux_hist_dip_ns.png' width='30%'>
+<img src='./figure/flux/10.1738_flux_hist.png' width='30%'>
 </figure>
 dipタイプのほうがfluxが強い→内側では強いfluxを持つ構造が存在している証左？
 
 また，dipタイプとnsタイプの分布の違いは以下の様
 <figure>
-<img src='./figure/flux/dip_10.1738_flux_rss_x.png' width='40%'>
-<img src='./figure/flux/ns_10.1738_flux_rss_x.png' width='40%'>
-<img src='./figure/flux/none_10.1738_flux_rss_x.png' width='40%'>
+<img src='./figure/flux/dip_10.1738_flux_rss_x.png' width='30%'>
+<img src='./figure/flux/ns_10.1738_flux_rss_x.png' width='30%'>
+<img src='./figure/flux/none_10.1738_flux_rss_x.png' width='30%'>
 </figure>
 
 ~~はっきりとはわからないが，dipタイプのほうが強いfluxが多い？（あまり確信をもっては言えなさそう...）~~    
@@ -209,6 +213,8 @@ dipタイプのほうがfluxが強い→内側では強いfluxを持つ構造が
 * dipタイプでBzが重要なのに高エネルギーのfluxがないものは何？(orbit 199とorbit 201の違いは？)
 * 太陽風との相関は言えなさそう...   
 →depressionの深さの評価の時と同じく，うまく出来ないのでは？
+
+depressionの磁場成分だけでなく，Fluxのエネルギーも使って，4通りに分類する必要あり？
 
 **参考**
 <figure>
