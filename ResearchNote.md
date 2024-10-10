@@ -8,6 +8,7 @@
 - [2024/09/09](#20240909)
 - [2024/09/20](#20240920)
 - [2024/09/27](#20240927)
+- [2024/10/09](#20241009)
 
 ## 関連ファイル
 * __MDUS__  
@@ -307,3 +308,128 @@ L：特徴的な空間スケール
 これらを使って，Jy_dip，Lx，Pの分布をみてみる   
 そこから分類，特徴を見てみる
 ### 作業ファイル
+
+## 2024/10/09
+### 研究内容
+#### 前回のまとめ
+**dipタイプはnsタイプと比較して高温な成分を持っている．特に>=25MKあたりに一つ"山"がある** 
+
+以下の様なアプローチでこれについて考えていく
+1. 特にdipタイプの高温のものについて，南北非対称性があるのか
+   * plasma sheetについては朝方側がより水星側に張り出している（Dewey et al., 2020）
+   * 温度に関しても朝方側が高温（Zhao et al., 2020） 
+2. 温度の高さと$\nabla\times B$の大きさには何らかの相関があるのか
+   * 高温のプラズマがあるほど強い電流が流れるのか
+3. 圧力勾配（$\nabla P$）と温度に関係はあるのか
+   * 温度だけでなく，圧力に依存したdepressionもあるのかも...
+4. 尾部領域にも原因の探索をしてみる
+   * $\beta$や磁気圧，プラズマ圧との関係をDewey et al., 2020のように作ってみる
+  
+#### 結果
+それぞれの結果をまとめていく
+##### 1．朝夕非対称について
+dipタイプについて，25MK以上になっているものは82で，全体の約4分の1程度（全体は）
+
+以下が結果の図になる
+<figure>
+<img src='./figure/Temperature/temperature_distribution_dip.png' width='100%'>
+<img src='./figure/Temperature/temperature_distribution_ns.png' width='100%'>
+</figure>
+
+* 朝夕非対称に関してははっきりと何かを言うのは難しそう...?
+* nsタイプに関して，抽出したものはむしろdusk側に偏っていそう？
+  
+#### 2．rotB電流との相関について
+$J_Y = (\nabla\times B)_Y =\partial B_X/\partial Z-\partial B_Z/\partial X$と温度の関係を考える．
+
+このときに，dipタイプ，nsタイプについて，$J_Y$，$\partial B_X/\partial Z$，$-\partial B_Z/\partial X$それぞれとの関係をプロット
+
+以下結果
+<figure>
+<img src='./figure/Current/dip_Jy_positive.png' width='100%'>
+<img src='./figure/Current/ns_Jy_positive.png' width='100%'>
+</figure>
+<figure>
+<img src='./figure/Current/dip_Jy_negative.png' width='100%'>
+<img src='./figure/Current/ns_Jy_negative.png' width='100%'>
+</figure>
+<figure>
+<img src='./figure/Current/dip_JyR_positive.png' width='100%'>
+<img src='./figure/Current/ns_JyR_positive.png' width='100%'>
+</figure>
+<figure>
+<img src='./figure/Current/dip_JyR_negative.png' width='100%'>
+<img src='./figure/Current/ns_JyR_negative.png' width='100%'>
+</figure>
+<figure>
+<img src='./figure/Current/dip_JyL_positive.png' width='100%'>
+<img src='./figure/Current/ns_JyL_positive.png' width='100%'>
+</figure>
+<figure>
+<img src='./figure/Current/dip_JyL_negative.png' width='100%'>
+<img src='./figure/Current/ns_JyL_negative.png' width='100%'>
+</figure>
+
+表にすると...
+* $J_Y$について
+  
+  | |positive|negative|
+  |--|--|--|
+  |dip(all)|188.5|-130.01|
+  |dip(>=25MK)|210.51|-153.16|
+  |dip(<25MK)|180.14|-121.39|
+  |ns(all)|161.47|-48.25|
+  |ns(>=25MK)|172.24|-46.02|
+  |ns(<25MK)|160.51|-48.44|
+
+* $\partial B_Z/\partial X$について
+
+  | |positive|negative|
+  |--|--|--|
+  |dip(all)|133.55|-146.36|
+  |dip(>=25MK)|157.36|-169.59|
+  |dip(<25MK)|124.74|-137.78|
+  |ns(all)|52.04|-65.46|
+  |ns(>=25MK)|52.51|-77.50|
+  |ns(<25MK)|52.00|-64.39|
+
+* $\partial B_X/\partial Z$について
+
+  | |positive|negative|
+  |--|--|--|
+  |dip(all)|81.62|-33.05|
+  |dip(>=25MK)|88.60|-32.65|
+  |dip(<25MK)|79.19|-33.19|
+  |ns(all)|127.38|-28.33|
+  |ns(>=25MK)|132.15|-21.57|
+  |ns(<25MK)|129.96|-28.93|
+
+雑感として
+
+* dipタイプに関してはいずれの電流についても，温度が高くなるほうが強くなる傾向あり
+  * 主要な成分と，それから外れた雑多なものに分類できそう    
+  →雑多なほうに関しては，電流の計算に依っていそう？
+* nsタイプに関してはいずれの電流についても，温度と明確な関係はみられなさそう
+  * $\partial B_X/\partial Z$のnegative（dawn-to-dusk）方向の電流が小さくほとんど変化がないのは，neutral sheet通過したこととconsistentな結果といえそう
+* dipタイプのほうがnsタイプより$\partial B_Z/\partial X$成分が電流強い    
+→ここまでの過程に一致していそう
+
+以上より，
+
+* 温度の高いプラズマのある領域でより強い電流が流れている
+* dawn-to-duskの電流はdipタイプで強く流れる
+
+ことは言えそう
+
+#### ３．圧力勾配について
+コードに問題があったため修正中←完了
+
+### 作業内容
+
+### 今後の予定
+* ```MoveAverage```が正しく動いている？要確認
+
+### 作業ファイル
+* ```DipLocationWithPhysParm```：１，２関連の作業
+* ```RelationGradP```：３関連の作業
+* ```CalcPlasmaBeta```：４関連の作業
