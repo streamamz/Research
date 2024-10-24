@@ -556,6 +556,7 @@ tcタイプについても同様に，orbit：2047，2048について
 どこでどれくらいフラックスが強くなっているのか
 ##### Rとの関係
 特に90度に対して
+
 <img src='./figure/Pchang/R_flux_dip_over_25_90.png' width='80%'>
 <img src='./figure/Pchang/R_flux_dip_under_25_90.png' width='80%'>
 <img src='./figure/Pchang/R_flux_ns_over_25_90.png' width='80%'>
@@ -567,6 +568,7 @@ tcタイプについても同様に，orbit：2047，2048について
 ##### XY空間での関係
 同様に，XY平面での関係をプロット    
 以下は代表例として90度について
+
 <img src='./figure/Pchang/XY_flux_dip_over_25_90.png' width='80%'>
 <img src='./figure/Pchang/XY_flux_dip_under_25_90.png' width='80%'>
 <img src='./figure/Pchang/XY_flux_ns_over_25_90.png' width='80%'>
